@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="app.css">
+
+    <script defer src="app.js"></script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"
+  ></script>
+
+    <title>To Do List :-)</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Todo List App</h2>
+            <div class="input-box">
+                <input type="text" placeholder=" Add your new todo" id="input-task">
+                <button id="add" class="btn"><i class="fa fa-plus"></i></button>
+            </div>
+        
+             <div class="main-content">
+                <ul id="content">
+                    <li>
+                        <span class="text">Finish drafting graphic design posters.</span>
+                        <i class="fa fa-trash" onclick="deleteTask()"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="task">
+                <span class="text">You have 1 pending tasks</span>
+                <button type="button" onclick="actionClear()" class="clear">Clear All</button>
+            </div>
+        </div>
+  </body>
+</body>
+
+</html>
